@@ -25,29 +25,6 @@ Not included:
 
 See [NOTICE_SCOPE.md](NOTICE_SCOPE.md) for the exact reproducibility scope.
 
-## Workflow
-
-```text
-Abaqus/Explicit FE model
-        |
-        +--> VUMAT corotational kinematics: D^c, W_rel^c
-        |
-        +--> ODB material-orientation history: Q_k
-                         |
-                         v
-            frame-consistent reconstruction
-            Delta R_k, Omega_k^g, Q_(k-1/2)
-                         |
-                         v
-                    L^s(t)
-          fixed initial RD–TD–ND frame
-                         |
-                         v
-                 VPSC7 input file
-                         |
-                         v
-                 dual-phase VPSC
-```
 
 ## Software environment
 
